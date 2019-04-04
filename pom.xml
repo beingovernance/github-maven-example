@@ -77,7 +77,13 @@
 						</goals>
 						<phase>site</phase>
 					</execution>
-				</executions>
+					<execution>
+             					<id>attach-sources</id>
+              					<goals>
+               					   <goal>war</goal>
+               					 </goals>
+             				 </execution>
+          			</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
